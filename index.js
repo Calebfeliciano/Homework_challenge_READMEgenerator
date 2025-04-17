@@ -35,6 +35,10 @@ const questions = [
     name: 'tests',
     message: 'What are the test instructions?',
   },
+  {type: 'input',
+    name: 'Credits', 
+    message: 'Who are the contributors?',
+  },
   {
     type: 'list',
     name: 'license',
