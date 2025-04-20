@@ -2,6 +2,7 @@
 import inquirer from 'inquirer';
 import fs from 'fs';
 import generateReadme from './utils/generateMarkdown.js';
+import { type } from 'os';
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -14,6 +15,10 @@ const questions = [
     type: 'input',
     name: 'description',
     message: 'Provide a description of your project:',
+  },
+  {type: 'input',
+    name: 'Technilogies Used',
+    message: 'What technologies did you use?',
   },
   {
     type: 'input',
